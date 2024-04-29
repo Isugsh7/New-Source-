@@ -413,9 +413,7 @@ async def _(event):
     {str(eee)}''')
                     if "A wait of" in str(eee):
                         break
-                    else:
-                        await Tepthon ( " اجاك متاح !")
-            else:
+                    else
                 pass
             trys += 1
 
