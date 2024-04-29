@@ -89,29 +89,23 @@ def gen_user(choice):
         else:
             pass
     if choice == "4":
-        c = d =random.choices(a)
-        d = random.choices(e)
+        c = random.choices(b)
+        d = random.choices(b)
         s = random.choices(b)
-        f =  [c[0], '_' , d[0], c[0], d[0]]
+        k = random.choices(b)
+        f = [c[0], d[0], s[0],k[0]]
+        random.shuffle(f)
         username = ''.join(f)
+        username = 'vip'+username
         if username in banned[0]:
-            c = d =random.choices(a)
-            d = random.choices(e)
+            c = random.choices(b)
+            d = random.choices(b)
             s = random.choices(b)
-            f =  [c[0], d[0], c[0], '_' ,d[0]]
+            k = random.choices(b)
+            f = [c[0], d[0], s[0],k[0]]
+            random.shuffle(f)
             username = ''.join(f)
-        if username in banned[0]:
-            c = d =random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], d[0], '_' ,d[0], c[0]]
-            username = ''.join(f)   
-        if username in banned[0]:
-            c = d =random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], '_' ,d[0] ,d[0], c[0]]
-            username = ''.join(f) 
+            username = 'vip'+username
         else:
             pass
     if choice == "5":
@@ -414,13 +408,13 @@ async def _(event):
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await Tepthon.send_message(event.chat_id, f'''خطأ مع {username}
+                    await Tepthon (event.chat_id, f'''خطأ مع {username}
     الخطأ :
     {str(eee)}''')
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await Tepthon.send_message(event.chat.id, " اجاك متاح !")
+                        await Tepthon (event.chat.id, " اجاك متاح !")
             else:
                 pass
             trys += 1
