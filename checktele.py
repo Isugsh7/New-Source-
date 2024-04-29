@@ -408,13 +408,13 @@ async def _(event):
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await Tepthon (event.chat_id, f'''خطأ مع {username}
+                    await Tepthon (.chat_id, f'''خطأ مع {username}
     الخطأ :
     {str(eee)}''')
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await Tepthon (event.chat.id, " اجاك متاح !")
+                        await Tepthon (.chat.id, " اجاك متاح !")
             else:
                 pass
             trys += 1
