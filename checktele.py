@@ -410,7 +410,6 @@ async def _(event):
 ⤷ By : ( @PP6ZZ ) ''')
                     
                     break
-                pass
             trys += 1
 
         isclaim.clear()
