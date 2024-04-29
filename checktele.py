@@ -413,7 +413,6 @@ async def _(event):
     {str(eee)}''')
                     if "A wait of" in str(eee):
                         break
-                    else
                 pass
             trys += 1
 
