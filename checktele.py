@@ -251,7 +251,7 @@ def gen_user(choice):
     if choice == "14":
         c = random.choices(a)
         d = random.choices(e)
-        s = random.choices(e)
+        s = random.choices(b)
         f = [c[0], c[0], c[0], s[0], d[0]]    
         username = ''.join(f)
         if username in banned[0]:
