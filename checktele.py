@@ -17,10 +17,10 @@ from threading import Thread
 a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
-x = 'ertuiowaszxcvnm'
-c = 'mnvcxzaswertuio'
-s = 'wertuioaszxcvbnm'
-v = 'x'
+aa = 'ertuiowaszxcvnm'
+ee = 'mnvcxzaswertuio'
+bb = 'wertuioaszxcvbnm'
+aaa = 'x'
 banned = []
 isclaim = ["off"]
 isauto = ["off"]
@@ -89,29 +89,25 @@ def gen_user(choice):
         else:
             pass
     if choice == "4":
-        c = d =random.choices(a)
-        d = random.choices(e)
-        s = random.choices(b)
-        f =  [c[0], '_' , d[0], c[0], d[0]]
-        username = ''.join(f)
+        c = str(''.join((random.choice(a) for i in range(1))))
+        d = str(''.join((random.choice(e) for i in range(1))))
+        f1 = c+'_'+d+c+d
+        f2 = c+d+c+'_'+d
+        f3 = c+d+'_'+d+c
+        f4 = c+'_'+d+d+c
+        f = f1,f2,f3,f4
+        f = random.choice(f)
+        username = f
         if username in banned[0]:
-            c = d =random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], d[0], c[0], '_' ,d[0]]
-            username = ''.join(f)
-        if username in banned[0]:
-            c = d =random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], d[0], '_' ,d[0], c[0]]
-            username = ''.join(f)   
-        if username in banned[0]:
-            c = d =random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
-            f =  [c[0], '_' ,d[0] ,d[0], c[0]]
-            username = ''.join(f) 
+            c = str(''.join((random.choice(a) for i in range(1))))
+            d = str(''.join((random.choice(e) for i in range(1))))
+            f1 = c+'_'+d+c+d
+            f2 = c+d+c+'_'+d
+            f3 = c+d+'_'+d+c
+            f4 = c+'_'+d+d+c
+            f = f1,f2,f3,f4
+            f = random.choice(f)
+            username = f
         else:
             pass
     if choice == "5":
@@ -260,79 +256,163 @@ def gen_user(choice):
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(a)
+            d = random.choices(ee)
             s = random.choices(e)
             f = [c[0], c[0], c[0], s[0], d[0]]    
             username = ''.join(f)
         else:
             pass
     if choice == "15":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(s)
+        c = random.choices(aa)
+        d = random.choices(ee)
+        s = random.choices(bb)
         f = [c[0], c[0], d[0], s[0], s[0]]    
         username = ''.join(f)
         if username in banned[0]:
-            c = random.choices(x)
-            d = random.choices(c)
-            s = random.choices(s)
+            c = random.choices(aa)
+            d = random.choices(ee)
+            s = random.choices(bb)
             f = [c[0], c[0], d[0], s[0], s[0]]    
             username = ''.join(f)
         else:
             pass
     if choice == "16":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(s)
+        c = random.choices(aa)
+        d = random.choices(ee)
+        s = random.choices(bb)
         f = [c[0], d[0], s[0], s[0], s[0]]    
         username = ''.join(f)
         if username in banned[0]:
-            c = random.choices(c)
-            d = random.choices(s)
-            s = random.choices(x)
+            c = random.choices(aa)
+            d = random.choices(ee)
+            s = random.choices(bb)
             f = [c[0], d[0], s[0], s[0], s[0]]    
             username = ''.join(f)
         else:
             pass
     if choice == "17":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(v)
+        c = random.choices(aa)
+        d = random.choices(ee)
+        s = random.choices(aaa)
         f = [c[0], d[0], s[0], s[0], s[0]]    
         username = ''.join(f)
         if username in banned[0]:
-            c = random.choices(x)
-            d = random.choices(c)
-            s = random.choices(v)
+            c = random.choices(aa)
+            d = random.choices(ee)
+            s = random.choices(aaa)
             f = [c[0], d[0], s[0], s[0], s[0]]    
             username = ''.join(f)
         else:
             pass
     if choice == "18":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(v)
+        c = random.choices(aa)
+        d = random.choices(ee)
+        s = random.choices(aaa)
         f = [s[0], s[0], s[0], d[0], c[0]]    
         username = ''.join(f)
         if username in banned[0]:
-            c = random.choices(x)
-            d = random.choices(c)
-            s = random.choices(v)
+            c = random.choices(aa)
+            d = random.choices(ee)
+            s = random.choices(aaa)
             f = [s[0], s[0], s[0], d[0], c[0]]    
             username = ''.join(f)
         else:
             pass
     if choice == "19":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(v)
+        c = random.choices(aa)
+        d = random.choices(aaa)
+        s = random.choices(ee)
         f = [s[0], v[0], v[0], v[0], c[0]]    
         username = ''.join(f)
         if username in banned[0]:
-            c = random.choices(x)
-            d = random.choices(c)
-            s = random.choices(v)
-            f = [s[0], v[0], v[0], v[0], c[0]]    
+            c = random.choices(aa)
+            d = random.choices(aaa)
+            s = random.choices(ee)
+            f = [s[0], d[0], d[0], d[0], c[0]]    
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "20":
+        c = random.choices(aa)
+        d = random.choices(ee)
+        s = random.choices(bb)
+        f = [s[0], d[0], d[0], d[0], c[0]]    
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(aa)
+            d = random.choices(ee)
+            s = random.choices(bb)
+            f = [s[0], d[0], d[0], d[0], c[0]]    
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "21":
+        c = random.choices(aa)
+        d = random.choices(ee)
+        s = random.choices(bb)
+        f = [c[0], d[0], s[0], s[0], s[0]]    
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(aa)
+            d = random.choices(ee)
+            s = random.choices(bb)
+            f = [c[0], d[0], s[0], s[0], s[0]]    
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "22":
+        c = random.choices(aa)
+        d = random.choices(ee)
+        s = random.choices(bb)
+        f = [s[0], s[0], s[0], d[0], c[0]]    
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(aa)
+            d = random.choices(ee)
+            s = random.choices(aaa)
+            f = [s[0], s[0], s[0], d[0], c[0]]    
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "23":
+        c = random.choices(aa)
+        d = random.choices(bb)
+        s = random.choices(ee)
+        f = [s[0], d[0], d[0], d[0], c[0]]    
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(aa)
+            d = random.choices(bb)
+            s = random.choices(ee)
+            f = [s[0], d[0], d[0], d[0], c[0]]    
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "24":
+        c = random.choices(e)
+        d = random.choices(b)
+        s = random.choices(a)
+        f = [c[0], c[0], d[0], d[0], d[0] , d[0]]    
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(e)
+            d = random.choices(b)
+            s = random.choices(a)
+            f = [c[0], c[0], d[0], d[0], d[0] , d[0]]    
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "25":
+        c = random.choices(e)
+        d = random.choices(b)
+        s = random.choices(a)
+        f = [c[0], c[0], d[0], d[0], d[0]]    
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(e)
+            d = random.choices(b)
+            s = random.choices(a)
+            f = [c[0], c[0], d[0], d[0], d[0]]    
             username = ''.join(f)
         else:
             pass
@@ -410,6 +490,19 @@ async def _(event):
 ⤷ By : ( @PP6ZZ ) ''')
                     
                     break
+                except telethon.errors.rpcerrorlist.UsernameInvalidError:
+                    with open("banned.txt", "a") as f:
+                        f.write(f"\n{username}")
+                except Exception as eee:
+                    await Tepthon.send_message(event.chat_id, f'''خطأ مع {username}
+    الخطأ :
+    {str(eee)}''')
+                    if "A wait of" in str(eee):
+                        break
+                    else:
+                        await Tepthon.send_message(event.chat.id, " اجاك متاح !")
+            else:
+                pass
             trys += 1
 
         isclaim.clear()
