@@ -150,7 +150,20 @@ tele_checker2 = '''
 
 12 - axaaa - a1aaa
 
-13 ab_aa
+13 - ab_aa
+14 - sssiu
+15 - ccunn
+16 - seaaa
+17 - caxxx
+18 - xxxca
+19 - cxxxa
+20 - asssc
+21 - acsss
+22 - aaasc
+23 - asssc
+24 - ab1111
+25 - ab111
+
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 طريقـة تفـعيل الـصيد 
 
