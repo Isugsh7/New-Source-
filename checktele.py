@@ -256,9 +256,9 @@ def gen_user(choice):
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(ee)
+            d = random.choices(e)
             s = random.choices(e)
-            f = [c[0], c[0], c[0], s[0], d[0]]    
+            f = [c[0], c[0], c[0], d[0], s[0]]    
             username = ''.join(f)
         else:
             pass
@@ -369,7 +369,7 @@ def gen_user(choice):
         if username in banned[0]:
             c = random.choices(aa)
             d = random.choices(ee)
-            s = random.choices(aaa)
+            s = random.choices(bb)
             f = [s[0], s[0], s[0], d[0], c[0]]    
             username = ''.join(f)
         else:
