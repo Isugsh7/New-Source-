@@ -491,7 +491,7 @@ async def _(event):
                     
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
-                    with open("banned.txt", "a") as f:
+                    with open("taken.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
                     await Tepthon.send_message(event.chat_id, f'''خطأ مع {username}
