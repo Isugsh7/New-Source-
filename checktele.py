@@ -416,6 +416,24 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+    if choice == "26":
+        c = random.choices(a)
+        d = random.choices(e)
+        s = random.choices(e)
+        f = [c[0], s[0], d[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        username = username+'bot'
+        if username in banned[0]:
+            c = random.choices(a)
+            d = random.choices(a)
+            s = random.choices(e)
+            f = [c[0], s[0], d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+            username = username+'bot'
+        else:
+            pass
     return username
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
