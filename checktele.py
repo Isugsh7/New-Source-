@@ -460,7 +460,7 @@ def gen_user(choice):
             username =f
         else:
             pass
-    if choice == "4":
+    if choice == "28":
         c = random.choices(b)
         d = random.choices(b)
         s = random.choices(b)
