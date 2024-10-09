@@ -480,6 +480,114 @@ def gen_user(choice):
             username = 'vip'+username
         else:
             pass
+    if choice == "29":
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], d[0], d[0] d[0] , d[0], c[0] ,d[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(e)
+            f = [c[0], c[0], d[0] d[0] , d[0], c[0] ,d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "30":
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], c[0], d[0] d[0] , c[0], c[0] ,c[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(e)
+            f = [c[0], c[0], c[0] d[0] , c[0], c[0] ,d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "31":
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], c[0], d[0] c[0] , c[0], d[0] ,d[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(e)
+            f = [c[0], d[0], d[0] c[0] , c[0], c[0] ,d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "32":
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], d[0], c[0] d[0] , c[0], c[0] ,c[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(e)
+            f = [c[0], d[0], d[0] c[0] , c[0], c[0] ,d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "33":
+        c = d = random.choices(a)
+        d = random.choices(b)
+        f = [c[0], c[0], d[0] d[0] , d[0], d[0] ,d[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(e)
+            f = [c[0], c[0], d[0] d[0] , d[0], d[0] ,d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "34":
+        c = d = random.choices(a)
+        d = random.choices(e)
+        f = [c[0], d[0], d[0] c[0] , d[0], c[0] ,c[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(e)
+            f = [c[0], d[0], c[0] d[0] , c[0], d[0] ,d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "35":
+        c = str(''.join((random.choice(a) for i in range(1))))
+        d = str(''.join((random.choice(e) for i in range(1))))
+        f1 = c+d+d+d+d+c+d
+        f2 = c+c+d+d+d+c+d
+        f3 = c+c+d+d+c+c+c
+        f4 = c+c+c+d+c+c+d
+        f5 = c+e+e+c+e+c+c
+        f = f1,f2,f3,f4,f5
+        f = random.choice(f)
+        username = f
+        if username in banned[0]:
+            c = str(''.join((random.choice(a) for i in range(1))))
+            d = str(''.join((random.choice(e) for i in range(1))))
+            f1 = c+c+d+c+c+d+d
+            f2 = c+d+d+c+c+c+d
+            f3 = c+d+c+d+c+c+c
+            f4 = c+d+d+c+c+c+d
+            f5 = c+e+c+e+c+e+e
+            f = f1,f2,f3,f4,f5
+            f = random.choice(f)
+            username = f
+        else:
+            pass
     return username
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
