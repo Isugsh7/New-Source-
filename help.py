@@ -176,6 +176,32 @@ tele_checker2 = '''
 
 25 - ab111
 
+26 - abcbot
+
+27 - bot1212 - bot123
+
+28 - bot1234
+
+29 - abbbbcb - a1111a1 
+
+30 - aabbaaa - aa11aaa 
+
+31 - aabaabb - aa1aa11
+
+32 - ababaaa - a1a1111
+
+33 - aa11111
+
+34 - abbabaa - a11a1aa
+
+35 - aabaabb - abbaaab - ababaaa - abbaaab - abababb - aa1aa11 - a11aaa1 - a1a1aaa - a11aaa1 - a1a1a11
+
+36 - aa88888
+
+37 - ab88888 - a188888
+
+38 - سباعي حرف
+
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 طريقـة تفـعيل الـصيد 
 
