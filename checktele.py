@@ -20,7 +20,7 @@ e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
 aa = 'ertuiowaszxcvnm'
 ee = 'mnvcxzaswertuio'
 bb = 'wertuioaszxcvnm'
-aaa = '8'
+bbb = '8'
 aaa = 'x'
 banned = []
 isclaim = ["off"]
@@ -591,13 +591,13 @@ def gen_user(choice):
             pass
     if choice == "36":
         c = d = random.choices(a)
-        d = random.choices(aaa)
+        d = random.choices(bbb)
         f = [c[0], c[0], d[0], d[0] , d[0], d[0] ,d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             c = d = random.choices(a)
-            d = random.choices(aaa)
+            d = random.choices(bbb)
             f = [c[0], c[0], d[0], d[0] , d[0], d[0] ,d[0]]
             random.shuffle(f)
             username = ''.join(f)
@@ -605,14 +605,14 @@ def gen_user(choice):
             pass
     if choice == "37":
         c = d = random.choices(a)
-        d = random.choices(aaa)
+        d = random.choices(bbb)
         s = random.choices(e) 
         f = [c[0], s[0], d[0], d[0] , d[0], d[0] ,d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
             c = d = random.choices(a)
-            d = random.choices(aaa)
+            d = random.choices(bbb)
             f = [c[0], s[0], d[0], d[0] , d[0], d[0] ,d[0]]
             random.shuffle(f)
             username = ''.join(f)
