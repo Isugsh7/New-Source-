@@ -678,6 +678,7 @@ def gen_user(choice):
         f = f1,f2
         f = random.choice(f)
         username = f
+    else:
             pass
     return username
 
