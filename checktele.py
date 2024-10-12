@@ -15,6 +15,7 @@ from config import *
 from threading import Thread
 
 a = 'qwertyuiopassdfghjklzxcvbnm'
+bbb = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
 aa = 'ertuiowaszxcvnm'
@@ -666,6 +667,17 @@ def gen_user(choice):
             f = random.choice(f)
             username =f
         else:
+            pass
+    if choice == "40":
+        c = str(''.join((random.choice(a) for i in range(1))))
+        s = str(''.join((random.choice(bbb) for i in range(1))))
+        n = str(''.join((random.choice(eee) for i in range(1))))
+        k = str(''.join((random.choice(b) for i in range(1))))
+        f1 = c+s+n+n+n+n+n
+        f2 = c+k+n+n+n+n+n
+        f = f1,f2
+        f = random.choice(f)
+        username = f
             pass
     return username
 
