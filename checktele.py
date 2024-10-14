@@ -539,15 +539,17 @@ def gen_user(choice):
         else:
             pass
     if choice == "33":
-        c = d = random.choices(a)
-        d = random.choices(b)
-        f = [c[0], c[0], d[0], d[0] , d[0], d[0] ,d[0]]
+        c = random.choices(a)
+        d = random.choices(bbb)
+        s = random.choices(b)
+        f = [c[0], c[0], s[0], s[0] , s[0], s[0] ,s[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(b)
-            f = [c[0], c[0], d[0], d[0] , d[0], d[0] ,d[0]]
+        c = random.choices(a)
+        d = random.choices(bbb)
+        s = random.choices(b)
+        f = [c[0], c[0], s[0], s[0] , s[0], s[0] ,s[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
@@ -569,9 +571,9 @@ def gen_user(choice):
     if choice == "35":
         c = str(''.join((random.choice(a) for i in range(1))))
         d = str(''.join((random.choice(b) for i in range(1))))
-        f1 = c+d+d+d+d+c+d
-        f2 = c+c+d+d+d+c+c
-        f3 = c+c+d+d+c+c+c
+        f1 = c+c+d+c+c+d+c
+        f2 = c+d+d+c+c+c+c
+        f3 = c+d+c+d+c+c+c
         f4 = c+c+c+d+c+c+d
         f5 = c+c+d+c+d+c+c
         f = f1,f2,f3,f4,f5
@@ -580,44 +582,55 @@ def gen_user(choice):
         if username in banned[0]:
             c = str(''.join((random.choice(a) for i in range(1))))
             d = str(''.join((random.choice(e) for i in range(1))))
-            f1 = c+c+d+c+c+d+d
-            f2 = c+d+d+c+c+c+d
+            f1 = c+c+d+c+c+d+c
+            f2 = c+d+d+c+c+c+c
             f3 = c+d+c+d+c+c+c
-            f4 = c+d+d+c+c+c+d
-            f5 = c+d+c+d+c+d+d
+            f4 = c+d+c+c+d+c+c
+            f5 = c+d+c+c+c+c+d
             f = f1,f2,f3,f4,f5
             f = random.choice(f)
             username = f
         else:
             pass
     if choice == "36":
-        c = d = random.choices(a)
+        c = random.choices(a)
         d = random.choices(bbb)
-        f = [c[0], c[0], d[0], d[0] , d[0], d[0] ,d[0]]
+        s = random.choices(eee)
+        f = [c[0], c[0], s[0], s[0] , s[0], s[0] ,s[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
-            c = d = random.choices(a)
+            c = random.choices(a)
             d = random.choices(bbb)
-            f = [c[0], c[0], d[0], d[0] , d[0], d[0] ,d[0]]
+            s = random.choices(eee)
+            f = [c[0], c[0], s[0], s[0] , s[0], s[0] ,s[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
             pass
     if choice == "37":
-        c = d = random.choices(a)
-        d = random.choices(eee)
-        s = random.choices(e) 
-        f = [c[0], s[0], d[0], d[0] , d[0], d[0] ,d[0]]
-        random.shuffle(f)
-        username = ''.join(f)
+        c = str(''.join((random.choice(a) for i in range(1))))
+        d = str(''.join((random.choice(e) for i in range(1))))
+        f1 = c+d+c+c+c+c
+        f2 = c+c+d+c+c+c
+        f3 = c+c+c+d+c+c
+        f4 = c+c+c+c+d+c
+        f5 = c+c+c+c+c+d
+        f6 = c+c+c+c+c+d
+        f = f1,f2,f3,f4,f5,f6
+        f = random.choice(f)
+        username = f
         if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(eee)
-            s = random.choices(b)
-            f = [c[0], s[0], d[0], d[0] , d[0], d[0] ,d[0]]
-            random.shuffle(f)
-            username = ''.join(f)
+            c = str(''.join((random.choice(a) for i in range(1))))
+            d = str(''.join((random.choice(b) for i in range(1))))
+            f1 = c+d+c+c+c+c
+            f2 = c+c+d+c+c+c
+            f3 = c+c+c+d+c+c
+            f4 = c+c+c+c+d+c
+            f5 = c+c+c+c+c+d
+            f6 = c+c+c+c+c+c
+            f = random.choice(f)
+            username = f
         else:
             pass
     if choice == "38":
