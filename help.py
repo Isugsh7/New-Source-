@@ -194,15 +194,17 @@ tele_checker2 = '''
 
 34 - abbabaa - a11a1aa
 
-35 - aabaabb - abbaaab - ababaaa - abbaaab - abababb - aa1aa11 - a11aaa1 - a1a1aaa - a11aaa1 - a1a1a11
+35 - سباعي حرفين
 
 36 - aa88888
 
-37 - ab88888 - a188888
+37 - سداسي حرفين 
 
 38 - سباعي حرف
 
 39 - trx12 - top12 - ton12 - tg123
+
+40 - ab88888 - a188888
 
 
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
