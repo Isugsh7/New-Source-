@@ -81,7 +81,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
 [Welcome to Source ADNAN]
-☆ VERSION : 4.5
+☆ VERSION : 4.6
 ☆ PING : `{ms}`
 ☆ DATE : `{m9zpi}`
 ☆ ID : `{event.sender_id}`
