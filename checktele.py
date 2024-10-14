@@ -545,7 +545,7 @@ def gen_user(choice):
         f = [c[0], c[0], s[0], s[0] , s[0], s[0] ,s[0]]
         random.shuffle(f)
         username = ''.join(f)
-        else:
+    else:
             pass
     if choice == "34":
         c = d = random.choices(a)
