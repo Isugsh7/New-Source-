@@ -104,8 +104,8 @@ def gen_user(choice):
             c = str(''.join((random.choice(a) for i in range(1))))
             d = str(''.join((random.choice(e) for i in range(1))))
             f1 = c+'_'+d+c+d
-            f2 = c+d+c+'_'+d
-            f3 = c+d+'_'+d+c
+            f2 = c+c+d+'_'+d
+            f3 = c+d+'_'+c+d
             f4 = c+'_'+d+d+c
             f = f1,f2,f3,f4
             f = random.choice(f)
