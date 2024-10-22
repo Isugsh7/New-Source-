@@ -213,6 +213,12 @@ tele_checker2 = '''
 43 - a88888b 
 
 44 - aa11bot - aa1abo - abbabot - a1a1bot 
+
+45 - a12aa - aa12a - aaa12
+
+46 - a_bbb - a_111 - aaa_b - aaa_1
+
+47 - aa11111
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 طريقـة تفـعيل الـصيد 
 
