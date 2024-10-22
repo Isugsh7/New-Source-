@@ -810,7 +810,8 @@ def gen_user(choice):
         c = str(''.join((random.choice(a) for i in range(1))))
         d = str(''.join((random.choice(e) for i in range(1))))
         f1 = c+'_'+d+d+d
-        f = f1
+        f2 = c+c+c+'_'+d
+        f = f1,f2
         f = random.choice(f)
         username = f
     else:
