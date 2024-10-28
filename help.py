@@ -178,9 +178,9 @@ tele_checker2 = '''
 
 26 - abcbot
 
-27 - vip1212 - vip123
+27 - vip1212 - vip123 - id123
 
-28 - vip1234
+28 - vip1234 - vip1112
 
 29 - abbbbcb - a1111a1 
 
