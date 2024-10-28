@@ -453,10 +453,10 @@ def gen_user(choice):
             d2 = str(''.join((random.choice(b) for i in range(1))))
             f1 = 'vip'+d1+d2+d1+d2
             f2= 'vip'+d1+d1+d2+d2
-            f3 = 'vip'+d1+d2+d2+d2
-            f4 = 'vip'+d1+d1+d1+d2
+            f3 = 'vip'+d1+d1+d1+d2
+            f4 = 'vip'+d1+d1+d1+d1
             f5 = 'id'+d1+d2+d3
-            f6 = 'bet'+d1+d2+d3
+            f6 = 'USER'+d1+d2+d3
             f = f1,f2,f3,f4,f5,f6
             f = random.choice(f)
             username =f
@@ -476,7 +476,7 @@ def gen_user(choice):
             d = random.choices(b)
             s = random.choices(b)
             k = random.choices(b)
-            f = [c[0], d[0], s[0],k[0]]
+            f = [c[0], c[0], c[0],k[0]]
             random.shuffle(f)
             username = ''.join(f)
             username = 'vip'+username
