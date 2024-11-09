@@ -941,7 +941,7 @@ async def _(event):
     if "on" in isclaim:
         isclaim.clear()
         isclaim.append("off")
-        trys = 0
+        trys = 0 
         await event.edit(" .تم إيقـاف عمليـة الصيد . ")
     elif "off" in isclaim:
         await event.edit(" لا تـوجـد عـملية صـيد جاريـة حـالـيًا .")
