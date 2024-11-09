@@ -937,7 +937,7 @@ async def _(event):
         trys = ""
         await event.client.send_message(event.chat_id, "! انتهى الصيد")
         @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.ايقاف الصيد"))
-async def _(event):
+        async def _(event):
     if "on" in isclaim:
         isclaim.clear()
         isclaim.append("off")
