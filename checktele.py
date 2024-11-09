@@ -943,10 +943,6 @@ async def _(event):
                 isclaim.append("off") 
                 trys = 0
                 await event.edit(" .تم إيقـاف عمليـة الصيد . ")
-                elif "off" in isclaim:
-                    await event.edit(" لا تـوجـد عـملية صـيد جاريـة حـالـيًا .")
-                    else
-                    await event.edit("- لقد حدث خطأ ما وتوقف الامر ") 
         
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
