@@ -904,18 +904,25 @@ async def _(event):
                     hours = e.Seconds // 3600
                     minutes = (e.seconds % 3600) // 60 
                     seconds = (e.seconds % 3600) % 60
-                    message = f"""**تم كشف فلود عند فحص اليوزر** {username}
-**يمكن خاصية تروح تثبت عليه بحساب اخر**  
-**باستخدام أوامر التثبيت `.م4` **
-ـ          **[⎉ IEX FloodWait Hunter ⎉](t.me/ghxxx)**
-ـ●━━━━━━━●
-**مدة الباند** 
+                    message= f"""** اليوزر فلود  ** {username}
+(اليوزر خاصية ثبت عليه بسرعة) 
+_____________________________
+**مدة الخاصية** 
      **الساعات: {hours}\n**
      **الدقائق: {minutes}\n**
      **الثواني: {seconds}**
-ـ●━━━━━━━●
-ـ"""
+_____________________________
+.""" 
                     await tepthon.send_message(event.chat_id, message)
+                    await event.client.send_file("@PP6ZZ",caption= f"""** اليوزر فلود  ** {username}
+(اليوزر خاصية ثبت عليه بسرعة) 
+_____________________________
+**مدة الخاصية** 
+     **الساعات: {hours}\n**
+     **الدقائق: {minutes}\n**
+     **الثواني: {seconds}**
+_____________________________
+.""" 
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
@@ -931,8 +938,7 @@ async def _(event):
                     	pass
             else:
                 pass
-            trys = int(trys)
-            trys += 3 
+            trys += 1
 
         isclaim.clear()
         isclaim.append("off")
