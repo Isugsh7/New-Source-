@@ -900,15 +900,14 @@ async def _(event):
                     
                     
                     break
-            except FloodWaitError as e:
-                hours = e.seconds // 3600
-                minutes = (e.seconds % 3600) // 60
-                seconds = (e.seconds % 3600) % 60
-
-                message = f"""**تم كشف فلود عند فحص اليوزر** {username}
+                except FloodWaitError as e:
+                    hours = e.Seconds // 3600
+                    minutes = (e.seconds % 3600) // 60 
+                    seconds = (e.seconds % 3600) % 60
+                    message = f"""**تم كشف فلود عند فحص اليوزر** {username}
 **يمكن خاصية تروح تثبت عليه بحساب اخر**  
 **باستخدام أوامر التثبيت `.م4` **
-ـ          **(t.me/r6r6rr)**
+ـ          **[⎉ IEX FloodWait Hunter ⎉](t.me/ghxxx)**
 ـ●━━━━━━━●
 **مدة الباند** 
      **الساعات: {hours}\n**
@@ -916,9 +915,7 @@ async def _(event):
      **الثواني: {seconds}**
 ـ●━━━━━━━●
 ـ"""
-                await Tepthon.send_message(event.chat_id, message)
-                await sleep(e.seconds + 5)
-                pass
+                    await tepthon.send_message(event.chat_id, message)
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
