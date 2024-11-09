@@ -938,15 +938,15 @@ async def _(event):
         await event.client.send_message(event.chat_id, "! انتهى الصيد")
         @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.ايقاف الصيد"))
         async def _(event):
-    if "on" in isclaim:
-        isclaim.clear()
-        isclaim.append("off")
-        trys = 0 
-        await event.edit(" .تم إيقـاف عمليـة الصيد . ")
-    elif "off" in isclaim:
-        await event.edit(" لا تـوجـد عـملية صـيد جاريـة حـالـيًا .")
-    else:
-        await event.edit("- لقد حدث خطأ ما وتوقف الامر ")
+            if "on" in isclaim:
+                isclaim.clear()
+                isclaim.append("off") 
+                trys = 0
+                await event.edit(" .تم إيقـاف عمليـة الصيد . ")
+                elif "off" in isclaim:
+                    await event.edit(" لا تـوجـد عـملية صـيد جاريـة حـالـيًا .")
+                    else
+                    await event.edit("- لقد حدث خطأ ما وتوقف الامر ") 
         
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
@@ -961,7 +961,8 @@ async def _(event):
             ch = str(msg[1])
             await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-            @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة التثبيت التلقائي"))
+            @Tepthon.on(events.NewMessage(outgoing=True, 
+                                        pattern=r"\.حالة التثبيت التلقائي"))
             async def _(event):
                 if "on" in isauto:
                     msg = await event.edit(f"التثبيت وصل لـ({trys}) من المحاولات")
