@@ -900,21 +900,23 @@ async def _(event):
                     
                     
                     break
-               except FloodWaitError as e:
+            except FloodWaitError as e:
                 hours = e.seconds // 3600
                 minutes = (e.seconds % 3600) // 60
                 seconds = (e.seconds % 3600) % 60
 
                 message = f"""**تم كشف فلود عند فحص اليوزر** {username}
-** اليوزر خاصية **
-
-(مدة الخاصية) 
+**يمكن خاصية تروح تثبت عليه بحساب اخر**  
+**باستخدام أوامر التثبيت `.م4` **
+ـ          **(t.me/r6r6rr)**
+ـ●━━━━━━━●
+**مدة الباند** 
      **الساعات: {hours}\n**
      **الدقائق: {minutes}\n**
      **الثواني: {seconds}**
-____________________________
+ـ●━━━━━━━●
 ـ"""
-            await Tepthon.send_message(event.chat_id, message)
+                await Tepthon.send_message(event.chat_id, message)
                 await sleep(e.seconds + 5)
                 pass
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -933,7 +935,7 @@ ____________________________
             else:
                 pass
             trys = int(trys)
-        trys += 3 
+            trys += 3 
 
         isclaim.clear()
         isclaim.append("off")
