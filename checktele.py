@@ -898,37 +898,29 @@ async def _(event):
 ⤷ Save : ( Channel )
 ⤷ By : ( @PP6ZZ ) @r6r6rr ''')
                     
-                    
                     break
                 except FloodWaitError as e:
-                    hours = e.Seconds // 3600
-                    minutes = (e.seconds % 3600) // 60 
+                    hours = e.seconds // 3600
+                    minutes = (e.seconds % 3600) // 60
                     seconds = (e.seconds % 3600) % 60
-                    message= f"""** اليوزر فلود  ** {username}
-(اليوزر خاصية ثبت عليه بسرعة) 
-_____________________________
-**مدة الخاصية** 
+                    message = f"""**تم كشف فلود عند فحص اليوزر** {username}
+** خاصية روح ثبت عليه  **
+ـ●━━━━━━━●
+** مدة الخاصية ** 
      **الساعات: {hours}\n**
      **الدقائق: {minutes}\n**
      **الثواني: {seconds}**
-_____________________________
-.""" 
-                    await tepthon.send_message(event.chat_id, message)
-                    await event.client.send_file("@PP6ZZ",caption= f"""** اليوزر فلود  ** {username}
-(اليوزر خاصية ثبت عليه بسرعة) 
-_____________________________
-**مدة الخاصية** 
-     **الساعات: {hours}\n**
-     **الدقائق: {minutes}\n**
-     **الثواني: {seconds}**
-_____________________________
-.""" 
+ـ●━━━━━━━●
+ـ"""
+                    await Tepthon.send_message(event.chat_id, message)
+                    await sleep(e.seconds + 5)
+                    pass
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
                     pass
-                    if "too many public channels" in str(eee):
+                    if "too many public channel" in str(eee):
                         await Tepthon.send_message(
                         event.chat_id,
                         f"""- خطأ بصيـد اليـوزر @{username} ,\n- الخطأ :\nانت تمتلك العديد من القنوات العامة قم بحذف معرف او اكثر من قنواتك لكي تستطيع صيد هذا اليوزر""",
@@ -944,14 +936,18 @@ _____________________________
         isclaim.append("off")
         trys = ""
         await event.client.send_message(event.chat_id, "! انتهى الصيد")
-        #################
-@Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.ايقاف الصيد"))
+        @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.ايقاف الصيد"))
 async def _(event):
     if "on" in isclaim:
         isclaim.clear()
         isclaim.append("off")
         trys = 0
-        await event.edit(" تم إيقـاف الصيد ")
+        await event.edit(" .تم إيقـاف عمليـة الصيد . ")
+    elif "off" in isclaim:
+        await event.edit(" لا تـوجـد عـملية صـيد جاريـة حـالـيًا .")
+    else:
+        await event.edit("- لقد حدث خطأ ما وتوقف الامر ")
+        
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
     if ispay2[0] == "yes":
