@@ -913,14 +913,13 @@ async def _(event):
 ـ●━━━━━━━●
 ـ"""
                     await Tepthon.send_message(event.chat_id, message)
-                    await sleep(e.seconds + 5)
                     pass
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
                     pass
-                    if "too many public channel" in str(eee):
+                    if "A wait of" in str(eee):
                         await Tepthon.send_message(
                         event.chat_id,
                         f"""- خطأ بصيـد اليـوزر @{username} ,\n- الخطأ :\nانت تمتلك العديد من القنوات العامة قم بحذف معرف او اكثر من قنواتك لكي تستطيع صيد هذا اليوزر""",
