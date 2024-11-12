@@ -1,12 +1,10 @@
 import telethon
-from telethon.events import CallbackQuery
 from telethon import events
 from config import *
 import os
 import logging
 import asyncio
 import time
-from telethon.tl.types import Channel, Chat, User
 from telethon.tl import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from telethon.utils import get_display_name
@@ -31,7 +29,6 @@ import datetime
 from payment import *
 from help import *
 from checktele import *
-from state_user import *
 from telethon.tl.functions.messages import GetHistoryRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 import requests
