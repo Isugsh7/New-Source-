@@ -1,23 +1,17 @@
+
 import random
+import threading
 import asyncio
-import logging
-from asyncio import sleep
+import telethon
+from telethon import events
+from queue import Queue
+import requests
+from telethon.sync import functions
+from user_agent import generate_user_agent
+import requests
 from user_agent import *
 from help import *
 from config import *
-from Formater import *
-import telethon
-from telethon import events, Button
-import requests
-from telethon.sync import functions
-from telethon.tl import types
-from telethon.tl.types import InputChatUploadedPhoto
-from telethon.errors import FloodError, FloodWaitError
-from user_agent import generate_user_agent
-import requests
-import re
-from queue import Queue
-import threading
 from threading import Thread
 
 a = 'qwertyuiopassdfghjklzxcvbnm'
@@ -905,31 +899,12 @@ async def _(event):
 ⤷ By : ( @PP6ZZ ) @r6r6rr ''')
                     
                     break
-                except FloodWaitError as e:
-                    hours = e.seconds // 3600
-                    minutes = (e.seconds % 3600) // 60
-                    seconds = (e.seconds % 3600) % 60
-                    message = f"""**تم كشف فلود عند فحص اليوزر** {username}
-** خاصية روح ثبت عليه  **
-ـ●━━━━━━━●
-** مدة الخاصية ** 
-     **الساعات: {hours}\n**
-     **الدقائق: {minutes}\n**
-     **الثواني: {seconds}**
-ـ●━━━━━━━●
-ـ"""
-                    await Tepthon.send_message(event.chat_id, message)
-                    pass
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
                     pass
                     if "A wait of" in str(eee):
-                        await Tepthon.send_message(
-                        event.chat_id,
-                        f"""- خطأ بصيـد اليـوزر @{username} ,\n- الخطأ :\nانت تمتلك العديد من القنوات العامة قم بحذف معرف او اكثر من قنواتك لكي تستطيع صيد هذا اليوزر""",
-                        )
                         break
                     else:
                     	pass
@@ -941,7 +916,7 @@ async def _(event):
         isclaim.append("off")
         trys = ""
         await event.client.send_message(event.chat_id, "! انتهى الصيد")
-       
+        
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
     if ispay2[0] == "yes":
@@ -955,8 +930,7 @@ async def _(event):
             ch = str(msg[1])
             await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-            @Tepthon.on(events.NewMessage(outgoing=True, 
-                                        pattern=r"\.حالة التثبيت التلقائي"))
+            @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة التثبيت التلقائي"))
             async def _(event):
                 if "on" in isauto:
                     msg = await event.edit(f"التثبيت وصل لـ({trys}) من المحاولات")
@@ -1023,7 +997,7 @@ Channel / @r6r6rr
     الخطأ :
     {str(eee)}''')
 Threads=[] 
-for t in range(100):
+for t in range(200):
     x = threading.Thread(target=_)
     le = threading.Thread(target=gen_user)
     x.start()
