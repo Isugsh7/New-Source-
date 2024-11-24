@@ -850,7 +850,7 @@ def gen_user(choice):
         f3 = c+c+c+d+d+d+d
         f4 = c+c+c+b+b+b+b
         f5 = c+s+s+s+s+s+c
-        f6 = c+s+s+s+s+b
+        f6 = c+s+s+s+s+c
         f7 = 'soso'+d+d
         f8 = 'svip'+d+d
         f9 = 'svip'+d+d+d
