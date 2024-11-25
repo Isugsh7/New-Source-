@@ -448,7 +448,7 @@ def gen_user(choice):
         f5 = 'id'+d1+d2+d3
         f = f1,f2,f3,f4,f5
         f = random.choice(f)
-        username =f
+        username = username+'vip'
         if username in banned[0]:
             d1 = str(''.join((random.choice(b) for i in range(1))))
             d2 = str(''.join((random.choice(b) for i in range(1))))
@@ -460,7 +460,7 @@ def gen_user(choice):
             f6 = 'USER'+d1+d2+d3
             f = f1,f2,f3,f4,f5,f6
             f = random.choice(f)
-            username =f
+            username = username+'bot'
         else:
             pass
     if choice == "28":
@@ -842,7 +842,7 @@ def gen_user(choice):
         f8 = 'vip'+d5+d4+d4
         f = f1,f2,f3,f4,f5,f6,f7,f8
         f = random.choice(f)
-        username =f
+        username = username+'vip'
     else:
         pass
     if choice == "49":
