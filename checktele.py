@@ -1,4 +1,4 @@
-#عمك عدنان هنا 
+#pylint:disable=E0001
 import random
 import threading
 import asyncio
@@ -17,7 +17,6 @@ from threading import Thread
 a = 'qwertyuiopassdfghjklzxcvbnm'
 bbb = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
-d = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
 aa = 'ertuiowaszxcvnm'
 ee = 'mnvcxzaswertuio'
@@ -448,7 +447,7 @@ def gen_user(choice):
         f5 = 'id'+d1+d2+d3
         f = f1,f2,f3,f4,f5
         f = random.choice(f)
-        username = username+'vip'
+        username =f
         if username in banned[0]:
             d1 = str(''.join((random.choice(b) for i in range(1))))
             d2 = str(''.join((random.choice(b) for i in range(1))))
@@ -460,7 +459,7 @@ def gen_user(choice):
             f6 = 'USER'+d1+d2+d3
             f = f1,f2,f3,f4,f5,f6
             f = random.choice(f)
-            username = username+'bot'
+            username =f
         else:
             pass
     if choice == "28":
@@ -830,19 +829,18 @@ def gen_user(choice):
         d1 = str(''.join((random.choice(b) for i in range(1))))
         d2 = str(''.join((random.choice(b) for i in range(1))))
         d3 = str(''.join((random.choice(b) for i in range(1))))
-        d4 = str(''.join((random.choice(e) for i in range(1))))
-        d5 = str(''.join((random.choice(a) for i in range(1))))
+        c = str(''.join((random.choice(a) for i in range(1))))
+        k = str(''.join((random.choice(e) for i in range(1))))
         f1 = 'vip'+d1+d2+d1+d1+d1
         f2= 'vip'+d1+d1+d2+d1+d1
-        f3 = 'vip'+d1+d1+d2+d1+d1
-        f4 = 'vip'+d1+d2+d2+d2+d2
-        f5 = 'vip'+d2+d1+d1+d1+d1
-        f6 = 'vip'+d5+d4+d5
-        f7 = 'vip'+d5+d5+d4
-        f8 = 'vip'+d5+d4+d4
-        f = f1,f2,f3,f4,f5,f6,f7,f8
+        f3 = 'vip'+d1+d2+d2+d2+d2
+        f4 = 'vip'+d1+d1+d1+d1+d2
+        f5 = 'vip'+c+k+c
+        f7 = 'vip'+c+c+k
+        f8 = 'vip'+a+k+k
+        f = f1,f2,f3,f4,f5
         f = random.choice(f)
-        username = username+'vip'
+        username =f
     else:
         pass
     if choice == "49":
@@ -1037,7 +1035,7 @@ Channel / @r6r6rr
     الخطأ :
     {str(eee)}''')
 Threads=[] 
-for t in range(200):
+for t in range(300):
     x = threading.Thread(target=_)
     le = threading.Thread(target=gen_user)
     x.start()
