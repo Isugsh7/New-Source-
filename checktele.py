@@ -1,4 +1,4 @@
-#pylint:disable=E0001
+#عمك عدنان هنا 
 import random
 import threading
 import asyncio
@@ -824,50 +824,6 @@ def gen_user(choice):
         f = random.choice(f)
         username = f
     else:
-        pass
-    if choice == "50":
-        d1 = str(''.join((random.choice(b) for i in range(1))))
-        d2 = str(''.join((random.choice(b) for i in range(1))))
-        d3 = str(''.join((random.choice(b) for i in range(1))))
-        f1 = 'vip'+d1+d2+d1+d1+d1
-        f2= 'vip'+d1+d1+d2+d1+d1
-        f3 = 'vip'+d1+d2+d2+d2+d2 
-        f4 = 'vip'+d1+d2+d2+d2+d2
-        f5 = 'vip'+d1+d1+d1+d1+d2
-        f = f1,f2,f3,f4,f5
-        f = random.choice(f)
-        username =f
-        if username in banned[0]:
-            d1 = str(''.join((random.choice(c) for i in range(1))))
-            d2 = str(''.join((random.choice(e) for i in range(1))))
-            f1 = 'vip'+d1+d2+d1
-            f2= 'vip'+d1+d1+d2
-            f3 = 'vip'+d1+d2+d2
-            f4 = 'vip'+d1+d2+d3
-            f = f1,f2,f3,f4
-            f = random.choice(f)
-            username =f
-        else:
-            pass 
-    if choice == "49":
-        c = str(''.join((random.choice(a) for i in range(1))))
-        b = str(''.join((random.choice(bbb) for i in range(1))))
-        d = str(''.join((random.choice(b) for i in range(1))))
-        s = str(''.join((random.choice(e) for i in range(1)))) 
-        f1 = c+c+c+c+d+d+d
-        f2 = c+c+c+c+b+b+b
-        f3 = c+c+c+d+d+d+d
-        f4 = c+c+c+b+b+b+b
-        f5 = c+s+s+s+s+s+c
-        f6 = c+s+s+s+s+c
-        f7 = 'soso'+d+d
-        f8 = 'svip'+d+d
-        f9 = 'svip'+d+d+d
-        f10 = 'bet'+d+d
-        f = f1,f2,f3,f4,f5,f6,f7,f8,f9,f10
-        f = random.choice(f)
-        username = f
-    else:
             pass
     return username
 
@@ -1041,7 +997,7 @@ Channel / @r6r6rr
     الخطأ :
     {str(eee)}''')
 Threads=[] 
-for t in range(200):
+for t in range(100):
     x = threading.Thread(target=_)
     le = threading.Thread(target=gen_user)
     x.start()
