@@ -825,6 +825,15 @@ def gen_user(choice):
         username = f
     else:
         pass
+    if choice == "48":
+        c = str(''.join((random.choice(a) for i in range(1))))
+        d = str(''.join((random.choice(b) for i in range(1))))
+        f1 = c+c+d+d+d+d+d+d
+        f = f1,f2,f3
+        f = random.choice(f)
+        username = f
+    else:
+        pass
     if choice == "49":
         d1 = str(''.join((random.choice(b) for i in range(1))))
         d2 = str(''.join((random.choice(b) for i in range(1))))
