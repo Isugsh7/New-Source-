@@ -739,7 +739,7 @@ def gen_user(choice):
         f = random.choice(f)
         username = f
     else:
-            pass
+        pass
     if choice == "43":
         c = str(''.join((random.choice(a) for i in range(1))))
         d = str(''.join((random.choice(bbb) for i in range(1))))
@@ -749,7 +749,7 @@ def gen_user(choice):
         f = f1,f2
         f = random.choice(f)
         username = f
-    else:
+    else: 
         pass
     if choice == "44":
         c = random.choices(a)
