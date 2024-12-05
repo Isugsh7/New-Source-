@@ -835,20 +835,19 @@ def gen_user(choice):
     else:
         pass
     if choice == "49":
-        d1 = str(''.join((random.choice(b) for i in range(1))))
-        d2 = str(''.join((random.choice(b) for i in range(1))))
-        d3 = str(''.join((random.choice(b) for i in range(1))))
-        c = str(''.join((random.choice(a) for i in range(1))))
-        a = str(''.join((random.choice(bbb) for i in range(1))))
-        s = str(''.join((random.choice(b) for i in range(1))))
-        f1 = 'soso'+d1+d2
-        f2= 'svip'+d1+d2
-        f3 = 'svip'+d1+d2+d3
+        aa = str(''.join((random.choice(b) for i in range(1))))
+        ab = str(''.join((random.choice(b) for i in range(1))))
+        ac = str(''.join((random.choice(b) for i in range(1))))
+        dd = str(''.join((random.choice(e) for i in range(1))))
+        cc = str(''.join((random.choice(a) for i in range(1))))
+        f1 = 'soso'+ab+aa
+        f2= 'svip'+aa+ab
+        f3 = 'svip'+aa+ab+ac
         f4 = 'bet'+d1+d2
         f5 = c+s+s+s+s+a
-        f6 = c+c+c+c+a+a+a
-        f7 = c+c+c+a+a+a+a
-        f8 = c+a+a+a+a+a+c
+        f6 = cc+cc+cc+cc+dd+dd+dd
+        f7 = cc+cc+cc+dd+dd+dd+dd
+        f8 = cc+dd+dd+dd+dd+dd+cc
         f = f1,f2,f3,f4,f5,f6,f7,f8
         f = random.choice(f)
         username =f
