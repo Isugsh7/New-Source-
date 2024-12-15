@@ -1,4 +1,4 @@
-#عمك عدنان هنا 
+#pylint:disable=E0001
 import random
 import threading
 import asyncio
@@ -739,7 +739,7 @@ def gen_user(choice):
         f = random.choice(f)
         username = f
     else:
-        pass
+       pass
     if choice == "43":
         c = str(''.join((random.choice(a) for i in range(1))))
         d = str(''.join((random.choice(bbb) for i in range(1))))
@@ -749,7 +749,7 @@ def gen_user(choice):
         f = f1,f2
         f = random.choice(f)
         username = f
-    else: 
+    else:
         pass
     if choice == "44":
         c = random.choices(a)
@@ -823,34 +823,6 @@ def gen_user(choice):
         f = f1,f2,f3
         f = random.choice(f)
         username = f
-    else:
-        pass
-    if choice == "48":
-        c = str(''.join((random.choice(a) for i in range(1))))
-        d = str(''.join((random.choice(b) for i in range(1))))
-        f1 = c+c+d+d+d+d+d+d
-        f = f1,f2,f3
-        f = random.choice(f)
-        username = f
-    else:
-        pass
-    if choice == "49":
-        aa = str(''.join((random.choice(b) for i in range(1))))
-        ab = str(''.join((random.choice(b) for i in range(1))))
-        ac = str(''.join((random.choice(b) for i in range(1))))
-        dd = str(''.join((random.choice(e) for i in range(1))))
-        cc = str(''.join((random.choice(a) for i in range(1))))
-        f1 = 'soso'+ab+aa
-        f2= 'svip'+aa+ab
-        f3 = 'svip'+aa+ab+ac
-        f4 = 'bet'+d1+d2
-        f5 = c+s+s+s+s+a
-        f6 = cc+cc+cc+cc+dd+dd+dd
-        f7 = cc+cc+cc+dd+dd+dd+dd
-        f8 = cc+dd+dd+dd+dd+dd+cc
-        f = f1,f2,f3,f4,f5,f6,f7,f8
-        f = random.choice(f)
-        username =f
     else:
             pass
     return username
