@@ -1,1 +1,25 @@
-{"name":"عدنان",".":" أهلًا بكم في تنصيب سورس صيد اليوزرات !","logo":".","stack":"container","repository":"https://t.me/Tepthon","keywords":["python","chatbot","telegrambot"],"website":"https://t.me/Tepthon","env":{"APP_ID":{"description":"الايـبـي ايــدي","value":"","required":true},"APP_HASH":{"description":"الايـبـي هــاش","value":"","required":true},"TERMUX":{"description":"كود تيرمكس","value":"","required":true},"TOKEN":{"description":"توكن البوت","value":"","required":true},"BOT_USERNAME":{"description":"يوزر البوت بدون ـ@ـ","value":"","required":true}}}
+{
+  "name": "@PP6ZZ",
+  "description": " اهلا بكم في تنصيب سورس صيد اليوزرات !",
+  "keywords": ["python", "chatbot","scalingo"],
+  "repository": "https://github.com/lsugsh7/Cuyy",
+  "stack": "container",
+  "env": {
+
+      "APP_ID": {
+          "description": "كـود ايبي ايـدي〔 App id 〕اتركـه كمـا هــو",
+          "required": true,
+          "value":"27455984"
+      },
+      "APP_HASH": {
+          "description": "كـود ايبي هـاش〔 Api Hash 〕اتركـه كمـا هــو",
+          "required": true,
+          "value":"62d5f68ce2e9189636967120220f5755"
+      },
+      "TERMUX": {
+        "description": "كـــود جلســة تيــرمكــس - الكـود الكبيـر مـن حـافظـة حسـابـك او مـن بــوت〔 T66bot@ 〕..",
+        "required": true,
+        "value":""
+      }
+  }
+}
