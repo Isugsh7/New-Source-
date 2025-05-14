@@ -5,8 +5,8 @@ from telethon import TelegramClient
 API_ID = 20621590  # ضع الـ API ID هنا (رقم فقط)
 API_HASH = "a7e91275d681fefd4b2453b158b254ec"  # ضع الـ API HASH هنا (بين علامتي اقتباس)
 BOT_USERNAME = "Bsgsg7s8wbot"  # ضع اسم البوت هنا بدون @
-session = "1BJWap1sAUF8B-YYYtte-w_gCT7Ucb4SsqWC--N4wzwERLhYqByU1LPArKt54Mng2IFc-l7Gy1stQonO9RgAns9ZV4-pfjfWkNRA94iQi8dilnRhSz-_18vXFdbkGOx0SkFp6Uvexv6Cm4d2fcu3_UpzRynPLfQZJuCXz1GhbbydEWse8BFXWuL56OGCdNVoR78gG8TiJ1vYgekfRtP-MdjllylT2LDkGu_pYoYnS0qXeAogFzhlkdl-OQtBenR2yYnQ4zX8CVD_5QPh_bD4Q7iReOcyx0xIbbM_HaK-0Pd_C385e-rcLfjj_wlS4ZWLrfAnO5kwEm5fiZsg9ViC-zm9W_1gf36k="  # ضع StringSession هنا (بين علامات اقتباس)
-SESSION = "1BJWap1sAUF8B-YYYtte-w_gCT7Ucb4SsqWC--N4wzwERLhYqByU1LPArKt54Mng2IFc-l7Gy1stQonO9RgAns9ZV4-pfjfWkNRA94iQi8dilnRhSz-_18vXFdbkGOx0SkFp6Uvexv6Cm4d2fcu3_UpzRynPLfQZJuCXz1GhbbydEWse8BFXWuL56OGCdNVoR78gG8TiJ1vYgekfRtP-MdjllylT2LDkGu_pYoYnS0qXeAogFzhlkdl-OQtBenR2yYnQ4zX8CVD_5QPh_bD4Q7iReOcyx0xIbbM_HaK-0Pd_C385e-rcLfjj_wlS4ZWLrfAnO5kwEm5fiZsg9ViC-zm9W_1gf36k="  # إذا كان يستخدم في مكان آخر
+session = "1BJWap1sAUHl2c0e-HMqG0ro9sWUwKxaVE25hgWIFos3_aopztUyGRoR6wQlNZ98YSBTm4Tg8TU0p9BBlJysCFYe5Jt8aYTX1T_aR-V9sUsJFsq0c5HzWb63YtDYgJMKkOA0W-yqkflyGSFZ_fYpljkFt2gK-Id5Nhuzbl5Zt8flVWqsY3S2gKlsYxsnS3gT6A57i3vaD7X8TfGOge9QI49xbo0136dRQ5C5UlSDQjkvD3CA7kiTS1MP-Bt6_CxhaMPh9b6avxN7YWcPNG6FuqX4qQMwPhqG2Wrm4pj1rdI9BSRgAi-UQtFWaaWtTayVHq14vcvm24cbPxim9noBDKxg6eyqSqlw="  # ضع StringSession هنا (بين علامات اقتباس)
+SESSION = "1BJWap1sAUHl2c0e-HMqG0ro9sWUwKxaVE25hgWIFos3_aopztUyGRoR6wQlNZ98YSBTm4Tg8TU0p9BBlJysCFYe5Jt8aYTX1T_aR-V9sUsJFsq0c5HzWb63YtDYgJMKkOA0W-yqkflyGSFZ_fYpljkFt2gK-Id5Nhuzbl5Zt8flVWqsY3S2gKlsYxsnS3gT6A57i3vaD7X8TfGOge9QI49xbo0136dRQ5C5UlSDQjkvD3CA7kiTS1MP-Bt6_CxhaMPh9b6avxN7YWcPNG6FuqX4qQMwPhqG2Wrm4pj1rdI9BSRgAi-UQtFWaaWtTayVHq14vcvm24cbPxim9noBDKxg6eyqSqlw="  # إذا كان يستخدم في مكان آخر
 token = "7657246738:AAEY-NO6KaCWkxod6N33ENvI-bvucpwLXGs"  # ضع توكن البوت من BotFather هنا (بين علامات اقتباس)
 
 Tepthon = TelegramClient(StringSession(session), API_ID, API_HASH)
